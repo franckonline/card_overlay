@@ -64,9 +64,12 @@ main {
     transform: scale(0);
     color:white;
     text-align:center;
-    line-height:350px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     font-size: 3rem;
-    /* box-shadow: white 0 0 3px; */
+    transition: .4s;
+    
 }
 
 .card1::before{
@@ -79,9 +82,7 @@ main {
     content: 'Des enfants';
 }
 
-
 .card:hover::before {
     visibility: initial;
     transform: scale(1);
-    transition: .4s;
 }
